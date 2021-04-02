@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #1deec4;
-    padding: 2rem;
+    padding: 20px;
     margin: 0.5rem;
     font-size: 20px;
     transition: all  1s ease ;
@@ -36,15 +36,6 @@ header{
     flex: 2;
 }
 
-.fas fa-check,
-.fas fa-plus-square,
-.fas fa-trash{
-    font-size: 1.5rem;
-    padding: 1rem;
-    background-color: #F4D03F;
-    border: none;
-    cursor: pointer;
-}
 
 .completed{
     text-decoration: line-through;
@@ -56,24 +47,44 @@ header{
 
 .todo-input,
 .todo-submit{
-    font-size: 30px;
-    padding: 1rem ;
-    margin-top: 2rem;
-}
-.form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 25px;
+    padding: 10px ;
+    margin-top: 1.5rem;
 }
 .completeButton,
 .trashButton{
-    font-size: 30px;
-    padding: 0.5rem 1rem;
+    font-size: 20px;
+    padding: 0.5rem 10px;
     cursor: pointer;
 }
 .todoLi{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 10px;
     color: white;
     font-weight: bolder;
 }
+
+@media screen and (min-width: 300px) and (max-width: 480) {
+    .todo-input,
+.todo-submit{
+    font-size: 10px;
+    padding: 5px ;
+    margin-top: 1rem;
+}
+.todo-input{
+    width: 40%;
+}
+.completeButton,
+.trashButton{
+    font-size: 10px;
+    padding: 0.3rem 5px;
+    cursor: pointer;
+}
+.todoLi{
+    font-size: 1rem;
+    padding: 5px;
+    color: white;
+    width: 300px;
+    font-weight: bolder;
+}
+  }
