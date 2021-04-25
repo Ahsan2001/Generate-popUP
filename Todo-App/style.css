@@ -64,16 +64,14 @@ header{
     font-weight: bolder;
 }
 
-@media screen and (min-width: 300px) and (max-width: 480) {
+@media screen and (min-width: 300px) {
     .todo-input,
 .todo-submit{
     font-size: 10px;
     padding: 5px ;
     margin-top: 1rem;
 }
-.todo-input{
-    width: 40%;
-}
+
 .completeButton,
 .trashButton{
     font-size: 10px;
